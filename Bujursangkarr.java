@@ -1,15 +1,15 @@
 public class Bujursangkarr {
-        public static void main(String[] args) {
-            Bujursangkarr a = new Bujursangkarr();
-            a.keliling();
+
+        private int sisi;
+        private double Keliling;
+
+        public void Keliling() {
+            this.Keliling = 4*sisi;
         }
-
-
-        public int sisi = 5;
-        public double kll ;
-
-        public void keliling() {
-            kll = 4*sisi;
-            System.out.println("Keliling bujur sangkar = " + kll);
+        public void setsisi(int sisi){
+            this.sisi = sisi;
+        }
+        public double getKll(){
+            return Keliling;
         }
 }

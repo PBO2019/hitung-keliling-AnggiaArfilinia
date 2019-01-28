@@ -1,16 +1,19 @@
 public class Lingkarann {
-        public static void main(String[] args) {
-            Lingkarann a = new Lingkarann();
-            a.keliling();
-        }
+    private int d;
+    private double pi=3.14;
+    private double kll;
 
+    public void hitungkeliling() {
+        this.kll = pi*d;
+    }
 
-        private int d = 6;
-        private double pi = 22/7;
-        private double kll ;
+    public void setd(int d){
+        this.d = d;
+    }
 
-        void keliling() {
-            kll = pi*d;
-            System.out.println("Keliling lingkaran = " + kll);
-        }
+    public double getKeliling(){
+        return kll;
+    }
+
 }
+
